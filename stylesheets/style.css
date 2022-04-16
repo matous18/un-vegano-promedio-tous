@@ -1,0 +1,977 @@
+/*----Index----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Days One', sans-serif;
+    color: white;
+}
+
+/* Body */
+
+.container1 {
+    background-image: url("./img/rename.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 700 px;
+    margin: 0 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 85px 200px 45% 400px 150px;
+    grid-gap: 50px 50px;
+    grid-template-areas: "Navbar Navbar Navbar"
+    ". . ."
+    ".Header."
+    "Bigbox Bigbox Bigbox"
+    "Footer Footer Footer";
+}
+
+/* Navbar */
+
+.nav_bar {
+    grid-area: Navbar;
+}
+
+nav {
+    width: 100%;
+    height: 85px;
+    background-color: #006535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 75px;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .main_title {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 8px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 17px;
+}
+nav ul li a:hover {
+    background-color: #00AA59;
+    color: #006535;
+}
+
+nav ul li a.active {
+    background-color: #00AA59;
+    color: #006535;
+}
+
+nav .mark i {
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+
+nav #click {
+    display: none;
+}
+
+nav ul li #search {
+    color:black;
+}
+
+nav ul li #submit {
+    color: black;
+}
+
+/* Logo */
+
+.logo_space {
+    grid-area: Header;
+    display: flex;
+    padding: 100px 80px;
+    justify-content: space-evenly;
+}
+
+#logo_main {
+    width: auto;
+    height: auto;
+    border-radius: 50% 100px;
+    border-color:#006535;
+    border: 10px solid #35723F;
+}
+
+/* Contenido */
+
+.content_space {
+    grid-area: Bigbox;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.breakfast {
+    background-color: #006535;
+    margin: 10px 5px 10px 10px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: 5px solid #35723F;
+    max-width: 100%;
+}
+
+.center1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #006535;
+    transform: translate(-50%,-50%);
+}
+
+.lunch {
+    background-color: #006535;
+    margin: 10px 5px 10px 5px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: 5px solid #35723F;
+    max-width: 100%;
+}
+
+.center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #006535;
+    transform: translate(-50%,-50%);
+}
+
+.dinner {
+    background-color: #006535;
+    margin: 10px 10px 10px 5px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: 5px solid #35723F;
+    max-width: 100%;
+}
+
+.center3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #006535;
+    transform: translate(-50%,-50%);
+}
+
+.footer_area {
+    background-color: #006535;
+    grid-area: Footer;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 75px;
+}
+
+/* Recetas */
+
+.recipe_content {
+    background-color: #00AA59;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 5% 600px;
+    grid-gap: 50px;
+}
+
+.Title_recipes {
+    display: flex;
+    justify-content: center;
+    background-color: #006535;
+    height: 50px;
+}
+
+.parg {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+#img_dish {
+    border-radius: 50px 50%;
+    width: 600px;
+    height: 400px;
+    border: 3px solid #006535;
+}
+
+.footer_recipe {
+    background-color: #006535;
+    grid-area: Footer;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 75px;
+}
+
+@media screen and (min-width: 1161px) {
+    
+/* Body */
+
+.container1 {
+    background-image: url("./img/rename.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 700 px;
+    margin: 0 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 85px 200px 45% 400px 150px;
+    grid-gap: 50px 50px;
+    grid-template-areas: "Navbar Navbar Navbar"
+    ". . ."
+    ".Header."
+    "Bigbox Bigbox Bigbox"
+    "Footer Footer Footer";
+}
+
+/* Navbar */
+
+.nav_bar {
+    grid-area: Navbar;
+}
+
+nav {
+    width: 100%;
+    height: 85px;
+    background-color: #006535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 75px;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .main_title {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 8px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 17px;
+}
+nav ul li a:hover {
+    background-color: #00AA59;
+    color: #006535;
+}
+
+nav ul li a.active {
+    background-color: #00AA59;
+    color: #006535;
+}
+
+nav .mark i {
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+
+nav #click {
+    display: none;
+}
+
+nav ul li #search {
+    color:black;
+}
+
+nav ul li #submit {
+    color: black;
+}
+
+/* Logo */
+
+.logo_space {
+    grid-area: Header;
+    display: flex;
+    padding: 100px 80px;
+    justify-content: space-evenly;
+}
+
+#logo_main {
+    width: auto;
+    height: auto;
+    border-radius: 50% 100px;
+    border-color:#006535;
+    border: 10px solid #35723F;
+}
+
+/* Contenido */
+
+.content_space {
+    grid-area: Bigbox;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.breakfast {
+    background-color: #006535;
+    margin: 10px 5px 10px 10px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: 5px solid #35723F;
+}
+
+.center1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #006535;
+    transform: translate(-50%,-50%);
+}
+
+.lunch {
+    background-color: #006535;
+    margin: 10px 5px 10px 5px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: 5px solid #35723F;
+}
+
+.center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #006535;
+    transform: translate(-50%,-50%);
+}
+
+.dinner {
+    background-color: #006535;
+    margin: 10px 10px 10px 5px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: 5px solid #35723F;
+}
+
+.center3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #006535;
+    transform: translate(-50%,-50%);
+}
+
+.footer_area {
+    background-color: #006535;
+    grid-area: Footer;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Recetas */
+
+.recipe_content {
+    background-color: #00AA59;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: 100px, 1fr, 1fr;
+    grid-gap: 50px;
+    grid-template-areas:
+    " Title Title"
+    "Text img"
+    "Text img"
+    "Text img"
+    ". .";
+}
+
+.Title_recipes {
+    display: flex;
+    background-color: #006535;
+    height: 50px;
+    grid-area: Title;
+}
+
+.parg {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-evenly;
+    grid-area: Text;
+}
+
+.img_container {
+    grid-area: img ;
+}
+
+#img_dish {
+    border-radius: 50px 50%;
+    width: 400px;
+    height: 250px;
+}
+
+.footer_recipe {
+    background-color: #006535;
+    grid-area: Footer;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 75px;
+}
+}
+
+/* Mobile view */
+
+@media all and (max-width: 1160px) {
+
+    .container1 {
+        background-image: none;
+        background-color: #00AA59;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        width: 100%;
+        min-width: 816px;
+        height: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px;
+    }
+
+    nav {
+        position: fixed;
+    }
+
+    nav .mark i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 85px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #006535;
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 45px 0px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: #00AA59;
+        background: none;
+    }
+
+    #click:checked ~ ul {
+        left: 0%;
+    }
+
+    #click:checked ~ .mark i::before {
+        content: "\f00d";
+    }
+
+    .logo_space {
+        display: flex;
+        padding: 100px 80px;
+        margin: 0;
+    }
+    
+    #logo_main {
+        width: auto;
+        height: auto;
+        border-radius: 50% 100px;
+        border-color:#006535;
+        border: 10px solid #35723F;
+    }
+
+    .content_space {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .breakfast {
+        display: flex;
+        position: relative;
+        text-align: center;
+        color: white;
+        justify-content: center;
+        border: none;
+    }
+    
+    .center1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #006535;
+        transform: translate(-50%,-50%);
+    }
+    
+    .lunch {
+        display: flex;
+        position: relative;
+        text-align: center;
+        color: white;
+        justify-content: center;
+        border: none;
+    }
+    
+    .center2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #006535;
+        transform: translate(-50%,-50%);
+    }
+    
+    .dinner {
+        display: flex;
+        position: relative;
+        text-align: center;
+        color: white;
+        justify-content: center;
+        border: none;
+    }
+    
+    .center3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #006535;
+        transform: translate(-50%,-50%);
+    }
+
+    #Brk {
+        width: 400px;
+        height: 400px;
+        border: 5px solid #35723F;
+    }
+
+    #Lun {
+        width: 400px;
+        height: 400px;
+        border: 5px solid #35723F;
+    }
+
+    #Din {
+        width: 400px;
+        height: 400px;
+        border: 5px solid #35723F;
+    }
+
+    .footer_area {
+        background-color: #006535;
+        display: flex;
+        width: 100%;
+        height: 300px;
+        justify-content: space-between;
+        padding: 0px 75px;
+        left: 0;
+        bottom: 0;
+    }
+
+    /* Recetas */
+
+    nav {
+        position: fixed;
+    }
+
+    nav .mark i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 85px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #006535;
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 45px 0px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: #00AA59;
+        background: none;
+    }
+
+    #click:checked ~ ul {
+        left: 0%;
+    }
+
+    #click:checked ~ .mark i::before {
+        content: "\f00d";
+    }
+
+    .recipe_content {
+    background-color: #00AA59;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px, 1fr, 1fr, 1fr;
+    grid-gap: 50px;
+    grid-template-areas:
+    " Title Title"
+    "Text img"
+    "Text img"
+    "Text img"
+    ". .";
+    }
+
+    .Title_recipes {
+    display: flex;
+    background-color: #006535;
+    height: 50px;
+    grid-area: Title;
+    }
+
+    .parg {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: space-evenly;
+        grid-area: Text;
+    }
+
+    .img_container {
+        grid-area: img ;
+    }
+
+    #img_dish {
+        border-radius: 50px 50%;
+        width: 400px;
+        height: 250px;
+    }
+
+    .footer_recipe {
+        background-color: #006535;
+        grid-area: Footer;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 75px;
+    }
+    }
+
+    @media all and (max-width: 1024px) {
+
+        .container1 {
+            background-image: none;
+            background-color: #00AA59;
+            background-attachment: fixed;
+            background-size: cover;
+            display: grid;
+            width: 100%;
+            min-width: 816px;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px;
+        }
+    
+        nav {
+            position: fixed;
+        }
+    
+        nav .mark i {
+            display: block;
+        }
+    
+        nav ul {
+            position: fixed;
+            top: 85px;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: #006535;
+            display: block;
+            text-align: center;
+        }
+    
+        nav ul li {
+            margin: 45px 0px;
+        }
+    
+        nav ul li a {
+            font-size: 20px;
+            display: block;
+        }
+    
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #00AA59;
+            background: none;
+        }
+    
+        #click:checked ~ ul {
+            left: 0%;
+        }
+    
+        #click:checked ~ .mark i::before {
+            content: "\f00d";
+        }
+    
+        .logo_space {
+            display: flex;
+            padding: 100px 80px;
+            margin: 0;
+        }
+        
+        #logo_main {
+            width: auto;
+            height: auto;
+            border-radius: 50% 100px;
+            border-color:#006535;
+            border: 10px solid #35723F;
+        }
+    
+        .content_space {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+    
+        .breakfast {
+            display: flex;
+            position: relative;
+            text-align: center;
+            color: white;
+            justify-content: center;
+            border: none;
+        }
+        
+        .center1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: #006535;
+            transform: translate(-50%,-50%);
+        }
+        
+        .lunch {
+            display: flex;
+            position: relative;
+            text-align: center;
+            color: white;
+            justify-content: center;
+            border: none;
+        }
+        
+        .center2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: #006535;
+            transform: translate(-50%,-50%);
+        }
+        
+        .dinner {
+            display: flex;
+            position: relative;
+            text-align: center;
+            color: white;
+            justify-content: center;
+            border: none;
+        }
+        
+        .center3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: #006535;
+            transform: translate(-50%,-50%);
+        }
+    
+        #Brk {
+            width: 400px;
+            height: 400px;
+            border: 5px solid #35723F;
+        }
+    
+        #Lun {
+            width: 400px;
+            height: 400px;
+            border: 5px solid #35723F;
+        }
+    
+        #Din {
+            width: 400px;
+            height: 400px;
+            border: 5px solid #35723F;
+        }
+    
+        .footer_area {
+            background-color: #006535;
+            display: flex;
+            width: 100%;
+            height: 300px;
+            justify-content: space-between;
+            padding: 0px 75px;
+            left: 0;
+            bottom: 0;
+        }
+    
+        /* Recetas */
+    
+        nav {
+            position: fixed;
+        }
+    
+        nav .mark i {
+            display: block;
+        }
+    
+        nav ul {
+            position: fixed;
+            top: 85px;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: #006535;
+            display: block;
+            text-align: center;
+        }
+    
+        nav ul li {
+            margin: 45px 0px;
+        }
+    
+        nav ul li a {
+            font-size: 20px;
+            display: block;
+        }
+    
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #00AA59;
+            background: none;
+        }
+    
+        #click:checked ~ ul {
+            left: 0%;
+        }
+    
+        #click:checked ~ .mark i::before {
+            content: "\f00d";
+        }
+    
+        .recipe_content {
+        background-color: #00AA59;
+        padding: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px, 1fr, 1fr, 1fr;
+        grid-gap: 50px;
+        grid-template-areas:
+        " Title Title"
+        "Text img"
+        "Text img"
+        "Text img"
+        ". .";
+        }
+    
+        .Title_recipes {
+        display: flex;
+        background-color: #006535;
+        height: 50px;
+        grid-area: Title;
+        }
+    
+        .parg {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            justify-content: space-evenly;
+            grid-area: Text;
+        }
+    
+        .img_container {
+            grid-area: img ;
+        }
+    
+        #img_dish {
+            border-radius: 50px 50%;
+            width: 400px;
+            height: 250px;
+        }
+    
+        .footer_recipe {
+            background-color: #006535;
+            grid-area: Footer;
+            display: flex;
+            width: 100%;
+            height: 100px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 75px;
+        }
+        }
+    
